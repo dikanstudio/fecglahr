@@ -3,7 +3,7 @@ import '../index.css';
 export default function Navigation() {
   return (
     <div className="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
-        <h1 class="w-3/12 font-semibold text-lg">
+        <h1 className="w-3/12 font-semibold text-lg">
             FECG Lahr
         </h1>
         <nav className="nav font-semibold text-lg">
