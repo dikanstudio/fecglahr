@@ -4,7 +4,10 @@ import Presentation from './landing/Presentation.js';
 
 export default function App() {
   return (
-    <Navigation/>
+    <div>
+      <Navigation/>
+      <Presentation/>
+    </div>
   )
 }
 
