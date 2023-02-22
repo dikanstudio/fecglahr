@@ -16,6 +16,8 @@ import {
 
 } from 'react-scroll-motion';
 
+import { Outlet, Link } from "react-router-dom";
+
 export default function Presentation() {
   
   const first = batch(Sticky(), Fade(), MoveOut(0, -200));
