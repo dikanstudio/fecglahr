@@ -24,7 +24,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import FrontOfChurch from '../assets/church/front.JPG';
 import HaalOfChurch from '../assets/church/haal.JPG';
-import FoyerOfChurch from '../assets/church/foyer.JPG'
+import FoyerOfChurch from '../assets/church/foyer.JPG';
 
 export default function Presentation() {
 
@@ -35,8 +35,9 @@ export default function Presentation() {
 
   return (
     <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
-      <img src={FrontOfChurch} className="rounded-md"></img>
+      <img src={FrontOfChurch} className=""></img>
       <ScrollPage>
+        <img src={FoyerOfChurch}></img>
         <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
           <div className="w-screen">
             <div className="flex m-10 space-x-6">
@@ -82,7 +83,7 @@ export default function Presentation() {
       <ScrollPage>
         <div className="w-screen">
           <div className="relative">
-            <img src={HaalOfChurch} className="rounded-md"></img>
+            <img src={HaalOfChurch} className=""></img>
             <div className="absolute bottom-0">
               <div className="flex h-screen">
                 <div className="m-auto">
