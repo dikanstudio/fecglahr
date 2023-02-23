@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <>
         <Header/>
-        <main>
+        <main className="">
             <Outlet/>
         </main>
         <Footer/>

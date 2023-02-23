@@ -21,10 +21,10 @@ export default function Header() {
                     <Link to="/dienste">Dienste</Link>
                 </li>
                 <li className="m-5 border-b-2 border-sky-500 border-opacity-0 hover:border-opacity-100 hover:text-sky-500 duration-200 cursor-pointer">
-                    <a href="#">Rehabilitation</a>
+                    <Link to="/rehabilitation">Rehabilitation</Link>
                 </li>
                 <li className="m-5 border-b-2 border-sky-500 border-opacity-0 hover:border-opacity-100 hover:text-sky-500 duration-200 cursor-pointer">
-                    <a href="#">gGmbH</a>
+                    <Link to="/gGmbh">gGmbH</Link>
                 </li>
             </ul>
         </nav>
