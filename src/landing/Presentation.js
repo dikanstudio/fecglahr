@@ -1,18 +1,21 @@
 import '../index.css';
-import {useRef, useEffect} from 'react';
+import { useRef, useEffect } from 'react';
 import {
-   ScrollContainer, 
-   ScrollPage, 
-   Animator, 
-   Sticky, 
-   Zoom, 
-   Fade, 
-   batch,
-   MoveOut,
-   StickyIn,
-   FadeIn,
-   ZoomIn,
-   Move
+  ScrollContainer,
+  ScrollPage,
+  Animator,
+  Sticky,
+  StickyOut,
+  Zoom,
+  Fade,
+  FadeOut,
+  ZoomOut,
+  batch,
+  MoveOut,
+  StickyIn,
+  FadeIn,
+  ZoomIn,
+  Move
 
 } from 'react-scroll-motion';
 
@@ -23,9 +26,10 @@ import HaalOfChurch from '../assets/church/haal.JPG';
 import FoyerOfChurch from '../assets/church/foyer.JPG'
 
 export default function Presentation() {
-  
+
   const first = batch(Sticky(), Fade(), MoveOut(0, -200));
   const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
+  const ZoomOutScrollOut = batch(StickyIn(), FadeOut(), ZoomIn());
   const FadeUp = batch(Fade(), Move(), Sticky());
 
   return (
@@ -33,51 +37,102 @@ export default function Presentation() {
       <img src={FrontOfChurch} className="rounded-md"></img>
       <ScrollPage>
         <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
-        <div className="w-screen">
-          <div className="flex m-10 space-x-6">
-            <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
-              <h1 className="text-7xl font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
-              <div className="mt-4">
-                <p className="text-xl text-justify text-gray-700">
-            Wir sind Christen des evangelischen Glaubens, denn das Herzstück unseres Glaubens und unserer Lehre ist das von unserem Herrn und Erlöser Jesus Christus verkündete Evangelium.
-            Wir glauben, dass der Herr Jesus Christus die einzige Person ist, durch die jeder, der an ihn glaubt und seine Sünden bereut, Vergebung der Sünden und ewiges Leben erhält. 
-            Wir glauben, dass dieses Evangelium, das von unserem Herrn Jesus Christus und seinen Aposteln gepredigt wurde, das einzige Kriterium für unser moralisches, sittliches und geistliches Leben ist.
-            Wir glauben auch, dass dieses Evangelium von Jesus Christus, sein Tod und seine Auferstehung, die einzige Garantie des Heils für jeden ist, der an ihn glaubt.
-                </p>
+          <div className="w-screen">
+            <div className="flex m-10 space-x-6">
+              <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
+                <h1 className="text-7xl font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
+                <div className="mt-4">
+                  <p className="text-xl text-justify text-gray-700">
+                    Wir sind Christen des evangelischen Glaubens, denn das Herzstück unseres Glaubens und unserer Lehre ist das von unserem Herrn und Erlöser Jesus Christus verkündete Evangelium.
+                    Wir glauben, dass der Herr Jesus Christus die einzige Person ist, durch die jeder, der an ihn glaubt und seine Sünden bereut, Vergebung der Sünden und ewiges Leben erhält.
+                    Wir glauben, dass dieses Evangelium, das von unserem Herrn Jesus Christus und seinen Aposteln gepredigt wurde, das einzige Kriterium für unser moralisches, sittliches und geistliches Leben ist.
+                    Wir glauben auch, dass dieses Evangelium von Jesus Christus, sein Tod und seine Auferstehung, die einzige Garantie des Heils für jeden ist, der an ihn glaubt.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5">
-              <h1 className="text-4xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
-              <div className="flex flex-col p-2">
-                <p className="text-2xl text-justify text-gray-700">Sonntag - 10.00 Uhr</p>
-                <p className="text-2xl text-justify text-gray-700">Dienstag - 19:00 Uhr</p>
-                <p className="text-2xl text-justify text-gray-700">Freitag - 19.00 Uhr</p>
-              </div>
-              <div className="">
-                <p className="text-2xl text-justify text-gray-700 bottom-0">
-                Hans-Inderfurthstr. 11
-                </p>
-                <p className="text-2xl text-justify text-gray-700 bottom-0">
-                77933 Lahr
-                </p>
-              </div>
-              <div className="flex flex-row space-x-5">
-                <p className="text-2xl text-justify text-gray-700 bottom-0">
-                Pastor:
-                </p>
-                <p className="text-2xl text-justify text-gray-700 bottom-0">
-                Viktor Binefeld
-                </p>
+              <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5">
+                <h1 className="text-4xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
+                <div className="flex flex-col p-2">
+                  <p className="text-2xl text-justify text-gray-700">Sonntag - 10.00 Uhr</p>
+                  <p className="text-2xl text-justify text-gray-700">Dienstag - 19:00 Uhr</p>
+                  <p className="text-2xl text-justify text-gray-700">Freitag - 19.00 Uhr</p>
+                </div>
+                <div className="">
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    Hans-Inderfurthstr. 11
+                  </p>
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    77933 Lahr
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-5">
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    Pastor:
+                  </p>
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    Viktor Binefeld
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </Animator>
       </ScrollPage>
       <ScrollPage>
-        <Animator animator={ZoomInScrollOut}>
-          <img src={HaalOfChurch} className="rounded-md"></img>
-        </Animator>
+          <div className="w-screen">
+            <div className="relative">
+              <img src={HaalOfChurch} className="rounded-md"></img>
+              <div className="absolute bottom-0">
+                <div className="flex h-screen">
+                  <div className="m-auto">
+                    <div className="flex m-10 space-x-6">
+                      <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
+                        <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
+                        <p>Informationen zum Gemeindesaal</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </ScrollPage>
+      <ScrollPage>
+        <div className="w-screen">
+            <div className="flex m-10 space-x-6">
+              <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
+                <div className="s">
+                  <p className="text-xl text-justify text-gray-700">
+                  Unsere Gemeinde beteiligt sich aktiv an verschiedenen Formen der Evangelisation und nutzt dabei verschiedene Methoden und Medien, die uns zur Verfügung stehen, darunter auch Videoübertragungen. Zu diesem Zweck haben wir zwei YouTube-Kanäle (FECG-LAHR) und (FECG-LAHR-MEDIA) für den Evangelisationsdienst per Video eingerichtet. Zur Unterstützung und Aufrechterhaltung eines effektiven Mediendienstes und zur Unterstützung der Arbeit des YouTube-Kanals und seiner Nutzer haben wir einen '5 EURO FOND' eingerichtet. Gelder, die als Spende in diesen Fonds fließen, werden in erster Linie für diesen Zweck verwendet, aber auch für die Renovierung oder Erneuerung von Video- und Audiogeräten. An dieser Stelle möchten wir uns auch ganz herzlich bei all unseren Freunden bedanken, die unsere Arbeit finanziell, moralisch und geistlich unterstützen. MÖGE DER HERR EUCH ALLE BELOHNEN!!! 
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5">
+                <h1 className="text-4xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
+                <div className="flex flex-col p-2">
+                  <p className="text-2xl text-justify text-gray-700">Sonntag - 10.00 Uhr</p>
+                  <p className="text-2xl text-justify text-gray-700">Dienstag - 19:00 Uhr</p>
+                  <p className="text-2xl text-justify text-gray-700">Freitag - 19.00 Uhr</p>
+                </div>
+                <div className="">
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    Hans-Inderfurthstr. 11
+                  </p>
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    77933 Lahr
+                  </p>
+                </div>
+                <div className="flex flex-row space-x-5">
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    Pastor:
+                  </p>
+                  <p className="text-2xl text-justify text-gray-700 bottom-0">
+                    Viktor Binefeld
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
       </ScrollPage>
     </ScrollContainer>
   )
