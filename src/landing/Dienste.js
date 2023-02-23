@@ -30,7 +30,7 @@ export default function Dienste() {
 
     return (
         <div className="w-screen">
-          <div className="flex m-10 space-x-6">
+          <div className="flex m-10 space-x-6 justify-center">
                 <div className="">
                     <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-slate-100">
                         <a href="#">

@@ -12,6 +12,7 @@ import {
   ZoomOut,
   batch,
   MoveOut,
+  MoveIn,
   StickyIn,
   FadeIn,
   ZoomIn,
@@ -86,10 +87,12 @@ export default function Presentation() {
               <div className="flex h-screen">
                 <div className="m-auto">
                   <div className="flex m-10 space-x-6">
+                  <Animator animation={MoveIn(-1000,0)}>
                     <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
                       <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
                       <p>Informationen zum Gemeindesaal</p>
                     </div>
+                  </Animator>
                   </div>
                 </div>
               </div>
@@ -103,6 +106,7 @@ export default function Presentation() {
             <div className="m-auto">
               <div className="p-10">
                 <div className="flex space-x-5 pb-5">
+                <Animator animation={MoveIn(-1000, 0)}>
                   <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
                     <div className="flex justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
@@ -123,6 +127,8 @@ export default function Presentation() {
                       </Link>
                     </div>
                   </div>
+                </Animator>
+                <Animator animation={MoveIn(0, -1000)}>
                   <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
                     <div className="flex justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
@@ -140,6 +146,8 @@ export default function Presentation() {
                       </button>
                     </div>
                   </div>
+                </Animator>
+                  <Animator animation={MoveIn(1000, 0)}>
                   <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
                     <div className="flex justify-center">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
@@ -157,11 +165,14 @@ export default function Presentation() {
                       </button>
                     </div>
                   </div>
+                  </Animator>
                 </div>
-                <div className="p-10 bg-white rounded-md shadow-md flex flex-col space-y-4">
-                  <h1 className="text-2xl">Geschichte der FECG Lahr</h1>
-                  <p className="">Informationen</p>
-                </div>
+                <Animator animation={MoveIn(0,1000)}>
+                  <div className="p-10 bg-white rounded-md shadow-md flex flex-col space-y-4">
+                    <h1 className="text-2xl">Geschichte der FECG Lahr</h1>
+                    <p className="">Informationen</p>
+                  </div>
+                </Animator>
               </div>
             </div>
           </div>
