@@ -42,7 +42,7 @@ export default function Presentation() {
               <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
                 <h1 className="text-7xl font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
                 <div className="mt-4">
-                  <p className="text-xl text-justify text-gray-700">
+                  <p className="text-xl text-justify text-gray-700 indent-5">
                     Wir sind Christen des evangelischen Glaubens, denn das Herzstück unseres Glaubens und unserer Lehre ist das von unserem Herrn und Erlöser Jesus Christus verkündete Evangelium.
                     Wir glauben, dass der Herr Jesus Christus die einzige Person ist, durch die jeder, der an ihn glaubt und seine Sünden bereut, Vergebung der Sünden und ewiges Leben erhält.
                     Wir glauben, dass dieses Evangelium, das von unserem Herrn Jesus Christus und seinen Aposteln gepredigt wurde, das einzige Kriterium für unser moralisches, sittliches und geistliches Leben ist.
@@ -79,60 +79,63 @@ export default function Presentation() {
         </Animator>
       </ScrollPage>
       <ScrollPage>
-          <div className="w-screen">
-            <div className="relative">
-              <img src={HaalOfChurch} className="rounded-md"></img>
-              <div className="absolute bottom-0">
-                <div className="flex h-screen">
-                  <div className="m-auto">
-                    <div className="flex m-10 space-x-6">
-                      <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
-                        <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
-                        <p>Informationen zum Gemeindesaal</p>
-                      </div>
+        <div className="w-screen">
+          <div className="relative">
+            <img src={HaalOfChurch} className="rounded-md"></img>
+            <div className="absolute bottom-0">
+              <div className="flex h-screen">
+                <div className="m-auto">
+                  <div className="flex m-10 space-x-6">
+                    <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
+                      <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
+                      <p>Informationen zum Gemeindesaal</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
       </ScrollPage>
       <ScrollPage>
         <div className="w-screen">
-            <div className="flex m-10 space-x-6">
-              <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
-                <div className="s">
-                  <p className="text-xl text-justify text-gray-700">
-                  Unsere Gemeinde beteiligt sich aktiv an verschiedenen Formen der Evangelisation und nutzt dabei verschiedene Methoden und Medien, die uns zur Verfügung stehen, darunter auch Videoübertragungen. Zu diesem Zweck haben wir zwei YouTube-Kanäle (FECG-LAHR) und (FECG-LAHR-MEDIA) für den Evangelisationsdienst per Video eingerichtet. Zur Unterstützung und Aufrechterhaltung eines effektiven Mediendienstes und zur Unterstützung der Arbeit des YouTube-Kanals und seiner Nutzer haben wir einen '5 EURO FOND' eingerichtet. Gelder, die als Spende in diesen Fonds fließen, werden in erster Linie für diesen Zweck verwendet, aber auch für die Renovierung oder Erneuerung von Video- und Audiogeräten. An dieser Stelle möchten wir uns auch ganz herzlich bei all unseren Freunden bedanken, die unsere Arbeit finanziell, moralisch und geistlich unterstützen. MÖGE DER HERR EUCH ALLE BELOHNEN!!! 
-                  </p>
+          <div className="flex h-screen">
+            <div className="m-auto">
+              <div className="">
+                <div className="flex space-x-5">
+                  <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4 justify-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                    </svg>
+
+                    <p className="text-center">
+                      Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
+                    </p>
+                  </div>
+                  <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                      <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                    <p className="text-center">
+                      Unsere Gemeinde beteiligt sich aktiv an verschiedenen Formen der Evangelisation und nutzt dabei verschiedene Methoden und Medien, die uns zur Verfügung stehen, darunter auch Videoübertragungen.
+                    </p>
+                  </div>
+                  <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                    </svg>
+
+                    <p className="text-center">
+                      Eine andere Form der Evangelisation, der christlichen Ethik und der Frömmigkeit, die durch den Dienst an einer besonderen Kategorie von Menschen zum Ausdruck kommt, ist der Dienst der Drogen- und Alkoholrehabilitation.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5">
-                <h1 className="text-4xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
-                <div className="flex flex-col p-2">
-                  <p className="text-2xl text-justify text-gray-700">Sonntag - 10.00 Uhr</p>
-                  <p className="text-2xl text-justify text-gray-700">Dienstag - 19:00 Uhr</p>
-                  <p className="text-2xl text-justify text-gray-700">Freitag - 19.00 Uhr</p>
-                </div>
-                <div className="">
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    Hans-Inderfurthstr. 11
-                  </p>
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    77933 Lahr
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-5">
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    Pastor:
-                  </p>
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    Viktor Binefeld
-                  </p>
-                </div>
+
               </div>
             </div>
           </div>
+        </div>
       </ScrollPage>
     </ScrollContainer>
   )
