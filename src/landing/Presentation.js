@@ -88,7 +88,7 @@ export default function Presentation() {
               <div className="flex h-screen">
                 <div className="m-auto">
                   <div className="flex m-10 space-x-6">
-                  <Animator animation={MoveIn(-1000,0)}>
+                  <Animator animation={batch(MoveIn(-1000,0), Fade())}>
                     <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
                       <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
                       <p>Informationen zum Gemeindesaal</p>
