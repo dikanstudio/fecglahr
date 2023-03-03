@@ -57,6 +57,7 @@ export default function Presentation() {
                 <div className="flex flex-col p-2">
                   <p className="text-2xl text-justify text-gray-700">Sonntag - 10.00 Uhr</p>
                   <p className="text-2xl text-justify text-gray-700">Dienstag - 19:00 Uhr</p>
+                  <p className="text-2xl text-justify text-gray-700">Donnerstag - 19.00 Uhr</p>
                   <p className="text-2xl text-justify text-gray-700">Freitag - 19.00 Uhr</p>
                 </div>
                 <div className="">

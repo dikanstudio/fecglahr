@@ -10,6 +10,7 @@ export default function App() {
       <Route path="/" element={<Navigation />}>
         <Route index element={<Presentation />} />
         <Route path="/dienste" element={<Dienste/>} />
+        <Route path="/ansprechpartner" element={<Dienste/>} />
       </Route>
     </Routes>
   )
