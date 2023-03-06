@@ -7,7 +7,7 @@ import { Outlet, Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <div className="bg-white">
+    <div className="bg-white shadow-md ">
       <div className="px-9">
         <div className="flex flex-row space-x-9 justify-center py-9">
           <div className="">
@@ -29,8 +29,12 @@ export default function Footer() {
           </div>
           <div className="">
             <h1 className="font-bold pb-2 border-b-2 border-b-black">Social Media</h1>
-            <p className="font-semibold pt-2">YouTube</p>
-            <p className="font-semibold pt-2">Instagram</p>
+            <a href="https://www.youtube.com/@Betesdalahr" target="_blank">
+              <p className="font-semibold pt-2">YouTube</p>
+            </a>
+            <a href="https://www.instagram.com/fecglahr/?hl=de" target="_blank">
+              <p className="font-semibold pt-2">Instagram</p>
+            </a>
           </div>
           <div className="flex flex-col">
             <div className="flex justify-center">
