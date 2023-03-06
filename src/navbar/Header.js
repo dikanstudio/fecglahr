@@ -13,21 +13,21 @@ export default function Header() {
             <Link to="/" className="-m-1.5 p-1.5 flex items-center">
                 <span class="sr-only">Your Company</span>
                 <img class="h-12 w-auto" src={logo} alt=""/>
-                <h1 className="text-2xl p-2 font-light duration-200 hover:text-blue-500">FECG Lahr</h1>
+                <h1 className="text-4xl subpixel-antialiased tracking-wider p-2 font-light duration-500 hover:tracking-widest">FECG LAHR</h1>
             </Link>
 
         </div>
         </div>
         <nav className="nav font-semibold text-lg">
             <ul className="flex items-center space-x-5">
-                <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
+                <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
                     <Link to="/dienste">Dienste</Link>
                 </li>
-                <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                    <Link to="/rehabilitation">Ansprechpartner</Link>
+                <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
+                    <Link to="/ansprechpartner">Ansprechpartner</Link>
                 </li>
-                <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 duration-200 cursor-pointer">
-                    <Link to="/gGmbh">Rehabilitation & gGmbH</Link>
+                <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
+                    <Link to="/rehabilitation">Rehabilitation & gGmbH</Link>
                 </li>
             </ul>
         </nav>
