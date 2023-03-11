@@ -35,13 +35,28 @@ export default function Ansprechpartner() {
     return (
         <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
             <ScrollPage>
-                <Animator animation={batch(Fade(), Sticky(), MoveOut(-1000, 0))}>
+                <Animator animation={batch(Fade(), Sticky(), MoveOut(0, 1000))}>
                     <div className="w-screen">
                         <div className="">
                             <h1 className='m-10 text-2xl border-b-2 border-black'>Gemeindeleitung</h1>
                             <div className="m-10 grid grid-cols-2 gap-4">
-                                <Card img={Pic1} name="Viktor Binefeld" position="Pastor & Gemeindeleiter" telefon="+49 179 544 6297" email="viktor.binefeld@fecg-lahr.de" text="text" />
-                                <Card img={Pic1} name="Freddi Koch" position="Rehabilitation" telefon="+49 176 288 2237 5" email="freddi.koch@fecg-lahr.de" text="text" />
+                                <Card img={Pic1} name="Viktor Binefeld" position="1 Vors. Dipl. Pastor: Viktor Binefeld " telefon="+49 179 544 6297" email="viktor.binefeld@fecg-lahr.de" text="text" />
+                                <Card img={Pic1} name="Freddy Koch" position="Stellvertreter & Rehaleiter" telefon="+49 176 288 2237 5" email="freddy.koch@fecg-lahr.de" text="text" />
+                                <Card img={Pic1} name="Philipp Binefeld" position="Geschäftsführer" telefon="+49 XXX XXXX XXX" email="philipp.binefeld@fecg-lahr.de" text="text" />
+                            </div>
+                        </div>
+                    </div>
+                </Animator>
+            </ScrollPage>
+            <ScrollPage>
+                <Animator animation={batch(MoveIn(0,-1000), Sticky(), MoveOut(-1000, 0))}>
+                    <div className="w-screen">
+                        <div className="">
+                            <h1 className='m-10 text-2xl border-b-2 border-black'>Gemeindeleitung</h1>
+                            <div className="m-10 grid grid-cols-2 gap-4">
+                                <Card img={Pic1} name="Paul Fischer" position="Jugendleitung" telefon="+49 XXX XXXX XXX" email="paul.fischer@fecg-lahr.de" text="text" />
+                                <Card img={Pic1} name="Alexander Balz" position="Jungscharleitung" telefon="+49 XXX XXXX XXX" email="alex.balz@fecg-lahr.de" text="text" />
+                                <Card img={Pic1} name="Vitali Paude" position="Kinderstundenleitung" telefon="+49 XXX XXXX XXX" email="vitali.paude@fecg-lahr.de" text="text" />
                             </div>
                         </div>
                     </div>

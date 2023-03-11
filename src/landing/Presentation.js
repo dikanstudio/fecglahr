@@ -25,6 +25,9 @@ import { Outlet, Link } from "react-router-dom";
 import FrontOfChurch from '../assets/church/front.JPG';
 import HaalOfChurch from '../assets/church/haal.JPG';
 import FoyerOfChurch from '../assets/church/foyer.JPG';
+import GradedFront from '../assets/church/gradedFront.jpg';
+import SideView from '../assets/church/sideView.jpg';
+import EntryChurch from '../assets/church/entryChurch.jpg';
 
 export default function Presentation() {
 
@@ -35,9 +38,9 @@ export default function Presentation() {
 
   return (
     <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
-      <img src={FrontOfChurch} className=""></img>
+      <img src={SideView} className=""></img>
       <ScrollPage>
-        <img src={FoyerOfChurch}></img>
+        <img className="" src={EntryChurch}></img>
         <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
           <div className="w-screen">
             <div className="flex m-10 space-x-6">
@@ -92,7 +95,7 @@ export default function Presentation() {
                   <Animator animation={batch(MoveIn(-1000,0), Fade())}>
                     <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
                       <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
-                      <p>Informationen zum Gemeindesaal</p>
+                      <p>Platz für ca. 1600 Personen</p>
                     </div>
                   </Animator>
                   </div>
