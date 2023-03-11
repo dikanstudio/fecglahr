@@ -92,12 +92,12 @@ export default function Presentation() {
               <div className="flex h-screen">
                 <div className="m-auto">
                   <div className="flex m-10 space-x-6">
-                  <Animator animation={batch(MoveIn(-1000,0), Fade())}>
-                    <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
-                      <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
-                      <p>Platz für ca. 1600 Personen</p>
-                    </div>
-                  </Animator>
+                    <Animator animation={batch(MoveIn(-1000, 0), Fade())}>
+                      <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
+                        <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
+                        <p>Platz für ca. 1600 Personen</p>
+                      </div>
+                    </Animator>
                   </div>
                 </div>
               </div>
@@ -111,68 +111,70 @@ export default function Presentation() {
             <div className="m-auto">
               <div className="p-10">
                 <div className="flex space-x-5 pb-5">
-                <Animator animation={MoveIn(-1000, 0)}>
-                  <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
-                    <div className="flex justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
-                      </svg>
+                  <Animator animation={MoveIn(-1000, 0)}>
+                    <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
+                      <div className="flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z" />
+                        </svg>
+                      </div>
+                      <p className="text-center">
+                        Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
+                      </p>
+                      <div class="flex justify-center space-x-2">
+                        <Link to="/dienste">
+                          <button
+                            type="button"
+                            className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 ">
+                            Dienste kennenlernen
+                          </button>
+                        </Link>
+                      </div>
                     </div>
-                    <p className="text-center">
-                      Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
-                    </p>
-                    <div class="flex justify-center space-x-2">
-                      <Link to="/dienste">
+                  </Animator>
+                  <Animator animation={MoveIn(0, -1000)}>
+                    <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
+                      <div className="flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                          <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                      </div>
+                      <p className="text-center">
+                        Unsere Gemeinde beteiligt sich aktiv an verschiedenen Formen der Evangelisation und nutzt dabei verschiedene Methoden und Medien, die uns zur Verfügung stehen, darunter auch Videoübertragungen.
+                      </p>
+                      <div class="flex justify-center space-x-2">
                         <button
                           type="button"
-                          className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 ">
-                          Dienste kennenlernen
+                          className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-300 ">
+                          Besuche uns auf YouTube
                         </button>
-                      </Link>
+                      </div>
                     </div>
-                  </div>
-                </Animator>
-                <Animator animation={MoveIn(0, -1000)}>
-                  <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
-                    <div className="flex justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                        <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                      </svg>
-                    </div>
-                    <p className="text-center">
-                      Unsere Gemeinde beteiligt sich aktiv an verschiedenen Formen der Evangelisation und nutzt dabei verschiedene Methoden und Medien, die uns zur Verfügung stehen, darunter auch Videoübertragungen.
-                    </p>
-                    <div class="flex justify-center space-x-2">
-                      <button
-                        type="button"
-                        className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-red-700 duration-300 ">
-                        Besuche uns auf YouTube
-                      </button>
-                    </div>
-                  </div>
-                </Animator>
+                  </Animator>
                   <Animator animation={MoveIn(1000, 0)}>
-                  <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
-                    <div className="flex justify-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                      </svg>
+                    <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
+                      <div className="flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-10 h-10">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                        </svg>
+                      </div>
+                      <p className="text-center">
+                        Eine andere Form der Evangelisation, der christlichen Ethik und der Frömmigkeit, die durch den Dienst an einer besonderen Kategorie von Menschen zum Ausdruck kommt, ist der Dienst der Drogen- und Alkoholrehabilitation.
+                      </p>
+                      <div class="flex justify-center space-x-2">
+                        <Link to="/rehabilitation">
+                          <button
+                            type="button"
+                            className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 ">
+                            Informationen zur Rehabilitation
+                          </button>
+                        </Link>
+                      </div>
                     </div>
-                    <p className="text-center">
-                      Eine andere Form der Evangelisation, der christlichen Ethik und der Frömmigkeit, die durch den Dienst an einer besonderen Kategorie von Menschen zum Ausdruck kommt, ist der Dienst der Drogen- und Alkoholrehabilitation.
-                    </p>
-                    <div class="flex justify-center space-x-2">
-                      <button
-                        type="button"
-                        className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 ">
-                        Informationen zur Rehabilitation
-                      </button>
-                    </div>
-                  </div>
                   </Animator>
                 </div>
-                <Animator animation={MoveIn(0,1000)}>
+                <Animator animation={MoveIn(0, 1000)}>
                   <div className="p-10 bg-white rounded-md shadow-md flex flex-col space-y-4">
                     <h1 className="text-2xl">Geschichte der FECG Lahr</h1>
                     <p className="">Informationen</p>
