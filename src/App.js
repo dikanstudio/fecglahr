@@ -10,6 +10,9 @@ import Dienstag from './landing/gottesdienste/Dienstag.js';
 import Donnerstag from './landing/gottesdienste/Donnerstag.js';
 import Freitag from './landing/gottesdienste/Freitag.js';
 import Sonntag from './landing/gottesdienste/Sonntag.js';
+import Impressum from './landing/Impressum.js';
+import Datenschutz from './landing/Datenschutz.js';
+import Kontakt from './landing/Kontakt.js';
 
 export default function App() {
   return (
@@ -24,6 +27,9 @@ export default function App() {
         <Route path="ansprechpartner" element={<Ansprechpartner/>} />
         <Route path="rehabilitation" element={<Rehabilitation/>} />
         <Route path="termine" element={<Termine />} />
+        <Route path="impressum" element={<Impressum/>} />
+        <Route path="datenschutz" element={<Datenschutz/>} />
+        <Route path="kontakt" element={<Kontakt/>} />
       </Route>
     </Routes>
   )

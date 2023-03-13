@@ -21,9 +21,15 @@ export default function Footer() {
           </div>
           <div className="">
             <h1 className="font-bold pb-2 border-b-2 border-b-black">Rechtliches</h1>
-            <p className="font-semibold pt-2">Impressum</p>
-            <p className="font-semibold pt-2">Datenschutz</p>
-            <p className="font-semibold pt-2">Kontakt</p>
+            <Link to="impressum">
+              <p className="font-semibold pt-2">Impressum</p>
+            </Link>
+            <Link to="datenschutz">
+              <p className="font-semibold pt-2">Datenschutz</p>
+            </Link>
+            <Link to="kontakt">
+              <p className="font-semibold pt-2">Kontakt</p>
+            </Link>
           </div>
           <div className="grow">
           </div>
