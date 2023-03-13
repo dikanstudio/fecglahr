@@ -23,6 +23,7 @@ import Card from '../components/card/Card.js';
 
 import BetesdaLogo from '../assets/reha/betesdaLogo.jpg';
 import BuildingView from '../assets/reha/buildingView.jpg';
+import WoodView from '../assets/reha/woodView.jpg';
 
 export default function Rehabilitation() {
 
@@ -54,7 +55,7 @@ export default function Rehabilitation() {
                 </Animator>
             </ScrollPage>
             <ScrollPage>
-                <Animator animation={batch(MoveIn(-3000,0), Sticky(), MoveOut(3000, 0))}>
+                <Animator animation={batch(MoveIn(-3000,0), Sticky(), Fade(), MoveOut(0, -1000))}>
                     <div className="w-screen">
                         <div className="relative">
                             <img src={BuildingView} className=""></img>
@@ -70,6 +71,40 @@ export default function Rehabilitation() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </Animator>
+            </ScrollPage>
+            <ScrollPage>
+                <Animator animation={batch(MoveIn(0,1000), Sticky(), MoveOut(0, -1000))}>
+                    <div className="w-screen">
+                        <div className="relative">
+                            <img src={WoodView} className=""></img>
+                            <div className="absolute inset-x-0 bottom-0">
+                                <div className="m-10 pb-10">
+                                    <div className="grid grid-cols-3 gap-4">
+                                    <div className="bg-slate-50 rounded-lg p-10 shadow-lg border-gray-500 border-2">
+                                            <h1 className="text-2xl border-b-2 border-black mb-5">Info 1</h1>
+                                            <p className="text-justify mb-3">Text</p>
+                                        </div>
+                                        <div className="bg-slate-50 rounded-lg p-10 shadow-lg border-gray-500 border-2">
+                                            <h1 className="text-2xl border-b-2 border-black mb-5">Info 2</h1>
+                                            <p className="text-justify mb-3">Text</p>
+                                        </div>
+                                        <div className="bg-slate-50 rounded-lg p-10 shadow-lg border-gray-500 border-2">
+                                            <h1 className="text-2xl border-b-2 border-black mb-5">Info 3</h1>
+                                            <p className="text-justify mb-3">Text</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Animator>
+            </ScrollPage>
+            <ScrollPage>
+                <Animator animation={batch(MoveIn(0,1000), Sticky(), MoveOut(0, -1000))}>
+                    <div className="w-screen">
+                        <h1 className="text-5xl text-center">gGmbH</h1>
                     </div>
                 </Animator>
             </ScrollPage>
