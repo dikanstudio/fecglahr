@@ -6,16 +6,24 @@ import Dienste from './landing/Dienste';
 import Ansprechpartner from './landing/Ansprechpartner';
 import Termine from './landing/Termine';
 import Rehabilitation from './landing/Rehabilitation';
+import Dienstag from './landing/gottesdienste/Dienstag.js';
+import Donnerstag from './landing/gottesdienste/Donnerstag.js';
+import Freitag from './landing/gottesdienste/Freitag.js';
+import Sonntag from './landing/gottesdienste/Sonntag.js';
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>
         <Route index element={<Presentation />} />
-        <Route path="/dienste" element={<Dienste/>} />
-        <Route path="/ansprechpartner" element={<Ansprechpartner/>} />
-        <Route path="/rehabilitation" element={<Rehabilitation/>} />
-        <Route path="/termine" element={<Termine />} />
+        <Route path="dienste" element={<Dienste/>}/>
+        <Route path="dienste/dienstag" element={<Dienstag />}/>
+        <Route path="dienste/donnerstag" element={<Donnerstag />}/>
+        <Route path="dienste/freitag" element={<Freitag />}/>
+        <Route path="dienste/sonntag" element={<Sonntag />}/>
+        <Route path="ansprechpartner" element={<Ansprechpartner/>} />
+        <Route path="rehabilitation" element={<Rehabilitation/>} />
+        <Route path="termine" element={<Termine />} />
       </Route>
     </Routes>
   )
