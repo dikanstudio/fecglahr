@@ -49,7 +49,7 @@ export default function Ansprechpartner() {
                 </Animator>
             </ScrollPage>
             <ScrollPage>
-                <Animator animation={batch(MoveIn(0,-1000), Sticky(), MoveOut(-1000, 0))}>
+                <Animator animation={batch(MoveIn(0,-1000), Sticky(), MoveOut(0, -1000))}>
                     <div className="w-screen">
                         <div className="">
                             <h1 className='m-10 text-2xl border-b-2 border-black'>Gemeindeleitung</h1>
