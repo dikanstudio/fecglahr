@@ -54,7 +54,7 @@ export default function Presentation() {
         <img className="" src={EntryChurch}></img>
         <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
           <div className="w-screen">
-            <div className="flex m-10 space-x-6">
+            <div className="2xl:flex 2xl:m-10 2xl:space-x-6">
               <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
                 <h1 className="text-7xl font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
                 <div className="mt-4">
@@ -121,7 +121,7 @@ export default function Presentation() {
           <div className="flex h-screen">
             <div className="m-auto">
               <div className="p-10">
-                <div className="flex space-x-5 pb-5">
+                <div className="2xl:flex 2xl:space-x-5 2xl:pb-5">
                   <Animator animation={MoveIn(-1000, 0)}>
                     <div className="bg-white p-5 rounded-md shadow-md flex flex-col space-y-4">
                       <div className="flex justify-center">
