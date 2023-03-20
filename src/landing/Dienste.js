@@ -21,7 +21,8 @@ import { Outlet, Link } from "react-router-dom";
 
 import FrontOfChurch from '../assets/church/front.JPG';
 import HaalOfChurch from '../assets/church/haal.JPG';
-import FoyerOfChurch from '../assets/church/foyer.JPG'
+import FoyerOfChurch from '../assets/church/foyer.JPG';
+import DienstagChurch from '../assets/dienste/dienstag/predigt.JPG';
 
 export default function Dienste() {
 
@@ -43,7 +44,7 @@ export default function Dienste() {
                                             class="absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"
                                         ></span>
                                         <a href="#">
-                                            <img className="rounded-t-lg" src={FoyerOfChurch} alt="" />
+                                            <img className="rounded-t-lg" src={DienstagChurch} alt="" />
                                         </a>
                                         <div className="p-5">
                                             <h5 className="text-2xl font-bold tracking-tight text-gray-900">Dienstag</h5>
