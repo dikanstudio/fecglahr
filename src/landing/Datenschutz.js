@@ -36,7 +36,7 @@ export default function Datenschutz() {
                     <li className="font-bold mt-5 mb-1">Datenerhebung</li>
                     <p className="">Da wir keine personenbezogenen Daten auf unserer Webseite erheben, gibt es auch keine Verwendungszwecke oder Rechtsgrundlagen für die Verarbeitung von personenbezogenen Daten.</p>
                     <li className="font-bold mt-5 mb-1">Protokollierung von Zugriffsdaten</li>
-                    <p className="mb-4">Bei jedem Zugriff auf unsere Webseite werden automatisch Zugriffsdaten erhoben und in Protokolldateien auf dem Server unseres Providers Strato gespeichert. Diese Daten umfassen:</p>
+                    <p className="mb-4">Bei jedem Zugriff auf unsere Webseite werden automatisch Zugriffsdaten erhoben und in Protokolldateien auf dem Server unseres Providers/Dienstleister AlfaHosting gespeichert. Diese Daten umfassen:</p>
                     <ul className="list-inside list-disc ml-5">
                         <li className="">Die IP-Adresse des zugreifenden Geräts</li>
                         <li className="">Das Datum und die Uhrzeit des Zugriffs</li>
