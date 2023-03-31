@@ -187,7 +187,7 @@ export default function Presentation() {
                     </div>
                   </Animator>
                 </div>
-                <Animator animation={MoveIn(0, 1000)}>
+                <Animator animation={MoveIn(0, 1000)} className="hidden">
                   <div className="p-10 mt-5 bg-white rounded-md shadow-md flex flex-col space-y-4">
                     <h1 className="text-2xl">Geschichte der FECG Lahr</h1>
                     <p className="">Informationen</p>
