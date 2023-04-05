@@ -1,7 +1,7 @@
 {
   "name": "fecglahr",
   "version": "0.1.0",
-  "homepage": "/test.fecg-lahr.de/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.11",
