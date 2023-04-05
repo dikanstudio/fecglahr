@@ -33,17 +33,8 @@ export default function Datenschutz() {
                     <p className="ml-5">Leon Dikan</p>
                     <p className="ml-5">Hans-Inderfurth-Str. 11</p>
                     <p className="ml-5">77933 Lahr</p>
-                    <li className="font-bold mt-5 mb-1">Datenerhebung</li>
-                    <p className="">Da wir keine personenbezogenen Daten auf unserer Webseite erheben, gibt es auch keine Verwendungszwecke oder Rechtsgrundlagen für die Verarbeitung von personenbezogenen Daten.</p>
                     <li className="font-bold mt-5 mb-1">Protokollierung von Zugriffsdaten</li>
-                    <p className="mb-4">Bei jedem Zugriff auf unsere Webseite werden automatisch Zugriffsdaten erhoben und in Protokolldateien auf dem Server unseres Providers/Dienstleister AlfaHosting gespeichert. Diese Daten umfassen:</p>
-                    <ul className="list-inside list-disc ml-5">
-                        <li className="">Die IP-Adresse des zugreifenden Geräts</li>
-                        <li className="">Das Datum und die Uhrzeit des Zugriffs</li>
-                        <li className="">Die aufgerufene Seite oder Datei</li>
-                        <li className="">Die Meldung, ob der Zugriff erfolgreich war</li>
-                        <li className="">Für mehr Details: <a className="text-blue-500" href="https://www.strato.de/blog/dsgvo-logfiles/">https://www.strato.de/blog/dsgvo-logfiles/</a></li>
-                    </ul>
+                    <p className="mb-4">Beim Besuch dieser Website werden keine personenbezogene Daten verarbeitet. Dabei verarbeitete Datenkategorien: technische Verbindungsdaten des Serverzugriffs (IP-Adresse, Datum, Uhrzeit, abgefragte Seite, Browser-Informationen). Zweck der Verarbeitung:Überwachung der technischen Funktion und zur Erhöhung der Betriebssicherheit unseres Webservers, Auslieferung und Bereitstellung der Website und Anonymisierung und Erstellung von Statistiken. Die Rechtsgrundlage für die Verarbeitung:ein berechtigtes Interesse, das die Rechte und Freiheiten der betroffenen Personen überwiegt (Art. 6 (1) f DSGVO). Berechtigte Interessen in diesem Zusammenhang:starkes wirtschaftliches Interesse an einem sicheren und funktionierenden Betrieb der technischen Systeme. Eine Übermittlung von Daten erfolgt: an den Auftragsverarbeiter Alfahosting GmbH, Ankerstraße 3b, 06108 Halle (Saale), Deutschland (https://alfahosting.de/). Dauer der Verarbeitung: ist variabel und endet mit dem Wegfall des Verarbeitungszwecks.</p>
                     <li className="font-bold mt-5 mb-1">Cookies</li>
                     <p className="mb-4">Unsere Webseite verwendet keine Cookies.</p>
                     <li className="font-bold mt-5 mb-1">Sicherheit</li>

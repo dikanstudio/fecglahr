@@ -26,7 +26,32 @@ export default function Impressum() {
     return (
         <div className="">
             <div className="bg-gradient-to-r from-slate-100 to-slate-50 p-10">
-                <h1 className="text-2xl">Impressum</h1>
+            <h1 className="text-2xl mb-10">Impressum</h1>
+                <p className="font-bold">Freie Evangeliums Christen Gemeinde Lahr e.V.</p>
+                <p className="">Hans-Inderfurth-Str. 11</p>
+                <p className="">77933 Lahr</p>
+                <p className="">info@fecg-lahr.de</p>
+                <p className="mt-4 font-bold">Vertretungsberechtigter Vorstand:</p>
+                <p className="">Viktor Binefeld</p>
+                <p className="">Hans-Inderfurth-Str. 11</p>
+                <p className="">77933 Lahr</p>
+                <p className="">info@fecg-lahr.de</p>
+                <p className="mt-4 font-bold">Geschäftsführer:</p>
+                <p className="">Philipp Binefeld</p>
+                <p className="">Hans-Inderfurth-Str. 11</p>
+                <p className="">77933 Lahr</p>
+                <p className="">info@fecg-lahr.de</p>
+                <p className="mt-4">Registergericht: </p>
+                <p className="">Registernummer: </p>
+                <p className="">Umsatzsteuer-Identifikationsnummer gemäß § 27 a</p>
+                <p className="">Umsatzsteuergesetz: </p>
+                <p className="mt-4">Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:</p>
+                <p className="">[Vorstandsvorsitzender/Vorsitzende]</p>
+                <p className="">[Adresse des Vorstandsvorsitzenden/Vorsitzende]</p>
+                <p className="">[Telefonnummer des Vorstandsvorsitzenden/Vorsitzende]</p>
+                <p className="">[E-Mail-Adresse des Vorstandsvorsitzenden/Vorsitzende]</p>
+                <p className="mt-4">Hinweis:</p>
+                <p className="">Wir sind als gemeinnütziger Verein anerkannt. Spenden an uns sind steuerlich absetzbar.</p>
             </div>
         </div>
     )
