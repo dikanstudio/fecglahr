@@ -1,9 +1,3 @@
-AuthName "secure"
-AuthType Basic
-AuthUserFile /var/www/web24546773/html/test.fecg-lahr.de/.htpasswd
-require valid-user
-
-
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
@@ -12,4 +6,4 @@ require valid-user
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-l
     RewriteRule . /index.html [L]
-  </IfModule>
+</IfModule>
