@@ -69,10 +69,9 @@ export default function Presentation() {
               <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5 justify-evenly">
                 <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
                 <ul className="list-disc list-inside">
-                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Sonntag - 10.00 Uhr</li>
-                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Dienstag - 19:00 Uhr</li>
-                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Donnerstag - 19.00 Uhr</li>
-                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Freitag - 19.00 Uhr</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Sonntag - 10.00 Uhr</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Dienstag - 19:00 Uhr</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Freitag - 19.00 Uhr</li>
                 </ul>
                 <ul className="list-none bottom-0">
                   <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Hans-Inderfurthstr. 11</li>
