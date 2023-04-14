@@ -54,11 +54,11 @@ export default function Presentation() {
         <img className="" src={EntryChurch}></img>
         <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
           <div className="w-screen">
-            <div className="flex m-10 space-x-6">
-              <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12'>
-                <h1 className="text-7xl font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
+            <div className="2xl:flex 2xl:m-10 2xl:space-x-6 2xl:justify-stretch xl:flex xl:m-10 xl:space-x-6 xl:justify-stretch lg:flex lg:m-10 lg:space-x-6 lg:justify-stretch">
+              <div className='bg-white p-10 first-letter shadow-md rounded-md w-9/12 justify-evenly'>
+                <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
                 <div className="mt-4">
-                  <p className="text-xl text-justify text-gray-700 indent-5">
+                  <p className="2xl:text-xl xl:text-xl lg:text-lg text-justify text-gray-700 indent-5">
                     Wir sind Christen des evangelischen Glaubens. Herzstück dessen und unserer Lehre ist das von unserem Herrn und Erlöser Jesus Christus verkündete Evangelium.
                     Wir glauben, dass der Herr Jesus Christus die einzige Person ist, durch die jeder, der an ihn glaubt und seine Sünden bereut, Vergebung der Sünden und ewiges Leben erhält.
                     Wir glauben, dass dieses Evangelium, das von unserem Herrn Jesus Christus und seinen Aposteln gepredigt wurde, das einzige Kriterium für unser moralisches, sittliches und geistliches Leben ist.
@@ -66,30 +66,21 @@ export default function Presentation() {
                   </p>
                 </div>
               </div>
-              <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5">
-                <h1 className="text-4xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
-                <div className="flex flex-col p-2">
-                  <p className="text-2xl text-justify text-gray-700">Sonntag - 10.00 Uhr</p>
-                  <p className="text-2xl text-justify text-gray-700">Dienstag - 19:00 Uhr</p>
-                  <p className="text-2xl text-justify text-gray-700">Donnerstag - 19.00 Uhr</p>
-                  <p className="text-2xl text-justify text-gray-700">Freitag - 19.00 Uhr</p>
-                </div>
-                <div className="">
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    Hans-Inderfurthstr. 11
-                  </p>
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    77933 Lahr
-                  </p>
-                </div>
-                <div className="flex flex-row space-x-5">
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    Pastor:
-                  </p>
-                  <p className="text-2xl text-justify text-gray-700 bottom-0">
-                    Viktor Binefeld
-                  </p>
-                </div>
+              <div className="bg-white p-10 first-letter shadow-md rounded-md w-3/12 flex flex-col space-y-5 justify-evenly">
+                <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
+                <ul className="list-disc list-inside">
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Sonntag - 10.00 Uhr</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Dienstag - 19:00 Uhr</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Donnerstag - 19.00 Uhr</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Freitag - 19.00 Uhr</li>
+                </ul>
+                <ul className="list-none bottom-0">
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Hans-Inderfurthstr. 11</li>
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">77933 Lahr</li>
+                </ul>
+                <ul className="list-none bottom-0">
+                  <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Pastor: Viktor Binefeld</li>
+                </ul>
               </div>
             </div>
           </div>

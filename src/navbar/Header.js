@@ -18,7 +18,7 @@ export default function Header() {
 
                 </div>
             </div>
-            <nav className="nav font-semibold text-lg">
+            <nav className="nav font-semibold text-lg invisible 2xl:visible xl:visible lg:visible">
                 <ul className="flex items-center space-x-5">
                     <Link to="/dienste">
                         <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
