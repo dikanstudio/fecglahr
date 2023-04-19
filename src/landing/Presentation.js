@@ -111,7 +111,7 @@ export default function Presentation() {
           <div className="flex h-screen">
             <div className="m-auto">
               <div className="p-10">
-                <div className="grid grid-cols-3 gap-5 items-stretch">
+                <div className="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 grid-col-1 gap-5 items-stretch">
                   <Animator animation={MoveIn(-1000, 0)}>
                     <div className="bg-white p-5 rounded-md shadow-md flex flex-col justify-evenly h-full">
                       <div className="flex justify-center">
