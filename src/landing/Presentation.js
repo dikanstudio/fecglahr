@@ -193,8 +193,35 @@ export default function Presentation() {
         </ScrollContainer>
 
       </div>
-      <div className="2xl:hidden xl:hidden lg:hidden">
-      <h1 className="2xl:text-7xl xl:text-6xl lg:text-5xl font-extralight border-b-2 p-2">MOBILE</h1>
+      <div className="2xl:hidden xl:hidden lg:hidden block">
+        <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50 m-4'>
+          <ScrollPage>
+            <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
+              <div className="w-screen">
+                <img src={SideView} className=""></img>
+              </div>
+            </Animator>
+          </ScrollPage>
+          <ScrollPage>
+            <Animator animation={ZoomInScrollOut}>
+              <div className="w-screen">
+                <div className="m-5">
+                  <div className='bg-white p-10 first-letter shadow-md rounded-md justify-evenly'>
+                    <h1 className="font-extralight border-b-2 border-b-black p-2">Freie Evangeliums Christen Gemeinde Lahr</h1>
+                    <div className="mt-4">
+                      <p className="text-justify text-gray-700 indent-5">
+                        Wir sind Christen des evangelischen Glaubens. Herzstück dessen und unserer Lehre ist das von unserem Herrn und Erlöser Jesus Christus verkündete Evangelium.
+                        Wir glauben, dass der Herr Jesus Christus die einzige Person ist, durch die jeder, der an ihn glaubt und seine Sünden bereut, Vergebung der Sünden und ewiges Leben erhält.
+                        Wir glauben, dass dieses Evangelium, das von unserem Herrn Jesus Christus und seinen Aposteln gepredigt wurde, das einzige Kriterium für unser moralisches, sittliches und geistliches Leben ist.
+                        Wir glauben auch, dass dieses Evangelium von Jesus Christus, sein Tod und seine Auferstehung, die einzige Garantie des Heils für jeden ist, der an ihn glaubt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Animator>
+          </ScrollPage>
+        </ScrollContainer>
       </div>
     </div>
   )
