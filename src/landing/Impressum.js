@@ -41,16 +41,23 @@ export default function Impressum() {
                 <p className="">Hans-Inderfurth-Str. 11</p>
                 <p className="">77933 Lahr</p>
                 <p className="">info@fecg-lahr.de</p>
-                <p className="mt-4">Registergericht: </p>
-                <p className="">Registernummer: </p>
-                <p className="">Umsatzsteuer-Identifikationsnummer gemäß § 27 a</p>
-                <p className="">Umsatzsteuergesetz: </p>
-                <p className="mt-4">Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:</p>
-                <p className="">[Vorstandsvorsitzender/Vorsitzende]</p>
-                <p className="">[Adresse des Vorstandsvorsitzenden/Vorsitzende]</p>
-                <p className="">[Telefonnummer des Vorstandsvorsitzenden/Vorsitzende]</p>
-                <p className="">[E-Mail-Adresse des Vorstandsvorsitzenden/Vorsitzende]</p>
-                <p className="mt-4">Hinweis:</p>
+                <p className="mt-4 font-bold">Registergericht:</p>
+                <p className="">Amtsgericht Freiburg</p>
+                <p className="font-bold">Registernummer:</p>
+                <p className="">VR390880</p>
+                <p className="font-bold">Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
+                <p className="">10050/51345</p>
+                <p className="mt-4 font-bold">Inhaltlich Verantwortlicher gemäß § 55 Abs. 2 RStV:</p>
+                <p className="">Viktor Binefeld</p>
+                <p className="">Hans-Inderfurth-Str. 11</p>
+                <p className="">77933 Lahr</p>
+                <p className="">info@fecg-lahr.de</p>
+                <p className="mt-4 font-bold">Vertretung:</p>
+                <p className="mt-4">Leon Dikan</p>
+                <p className="">Hans-Inderfurth-Str. 11</p>
+                <p className="">77933 Lahr</p>
+                <p className="">info@fecg-lahr.de</p>
+                <p className="mt-10">Hinweis:</p>
                 <p className="">Wir sind als gemeinnütziger Verein anerkannt. Spenden an uns sind steuerlich absetzbar.</p>
             </div>
         </div>
