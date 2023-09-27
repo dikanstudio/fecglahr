@@ -24,7 +24,10 @@ export default function Header() {
 
             <nav className="nav font-semibold text-lg hidden 2xl:block xl:block lg:block">
                 <ul className="flex items-center space-x-5">
-                    <Link to="/dienste">
+                    <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
+                        Weitere Inhalte bald verfügbar
+                    </li>
+                    {/* <Link to="/dienste">
                         <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
                             Dienste
                         </li>
@@ -43,7 +46,7 @@ export default function Header() {
                         <li className="p-5 border-b-2 border-blue-500 border-opacity-0 hover:border-opacity-100 hover:text-blue-500 transition duration-500 cursor-pointer">
                             Termine
                         </li>
-                    </Link>
+                    </Link> */}
                 </ul>
             </nav>
         </div>

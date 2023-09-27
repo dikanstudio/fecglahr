@@ -126,11 +126,11 @@ export default function Presentation() {
                             Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
                           </p>
                           <div className="flex justify-center mt-4">
-                            <Link to="/dienste">
+                            <Link to="/">
                               <button
                                 type="button"
                                 className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 ">
-                                Dienste kennenlernen
+                                Bald verfügbar
                               </button>
                             </Link>
                           </div>
@@ -172,19 +172,13 @@ export default function Presentation() {
                               <button
                                 type="button"
                                 className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 ">
-                                Informationen zur Rehabilitation
+                                Bald verfügbar
                               </button>
                             </Link>
                           </div>
                         </div>
                       </Animator>
                     </div>
-                    <Animator animation={MoveIn(0, 1000)} className="hidden">
-                      <div className="p-10 mt-5 bg-white rounded-md shadow-md flex flex-col space-y-4">
-                        <h1 className="text-2xl">Geschichte der FECG Lahr</h1>
-                        <p className="">Informationen</p>
-                      </div>
-                    </Animator>
                   </div>
                 </div>
               </div>
@@ -274,11 +268,11 @@ export default function Presentation() {
                       Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
                     </p>
                     <div className="flex justify-center mt-4">
-                      <Link to="/dienste">
+                      <Link to="/">
                         <button
                           type="button"
                           className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-orange-500 duration-300 ">
-                          Dienste kennenlernen
+                          Bald verfügbar
                         </button>
                       </Link>
                     </div>
@@ -332,7 +326,7 @@ export default function Presentation() {
                         <button
                           type="button"
                           className="px-4 py-2 rounded-md text-white transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-green-700 duration-300 ">
-                          Informationen zur Rehabilitation
+                          Bald verfügbar
                         </button>
                       </Link>
                     </div>

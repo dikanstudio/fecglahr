@@ -29,9 +29,9 @@ export default function Footer() {
                 <Link to="datenschutz">
                   <p className="font-semibold pt-2">Datenschutz</p>
                 </Link>
-                <Link to="kontakt">
+                {/* <Link to="kontakt">
                   <p className="font-semibold pt-2">Kontakt</p>
-                </Link>
+                </Link> */}
               </div>
               <div className="grow">
               </div>
@@ -80,9 +80,9 @@ export default function Footer() {
                 <Link to="datenschutz">
                   <p className="font-semibold pt-2">Datenschutz</p>
                 </Link>
-                <Link to="kontakt">
+                {/* <Link to="kontakt">
                   <p className="font-semibold pt-2">Kontakt</p>
-                </Link>
+                </Link> */}
               </div>
               <div className="grow">
               </div>
@@ -99,10 +99,10 @@ export default function Footer() {
                 <div className="flex justify-left">
                   <img src={logo} className="w-20"></img>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-left">
                   <h1 className="font-light pb-2 border-b-2 text-left border-b-black">Freie Evangeliums Christen Gemeinde Lahr</h1>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-left">
                   <h1 className="font-extralight pt-5 italic text-left">" […] Bis hierher hat uns der HERR geholfen."</h1>
                 </div>
               </div>
