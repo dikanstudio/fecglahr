@@ -123,7 +123,7 @@ export default function Presentation() {
                             </svg>
                           </div>
                           <p className="text-center">
-                            Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
+                            Jugend-, Teenager- und Kindergottesdienste sowie Gesangsgruppen und Gebetsgottesdienste mit dem prophetischen Wort und Offenbarungen.
                           </p>
                           <div className="flex justify-center mt-4">
                             <Link to="/">
@@ -265,7 +265,7 @@ export default function Presentation() {
                       </svg>
                     </div>
                     <p className="text-center">
-                      Jugend-, Teenager- und Kinderdienste sowie Gesangsgruppen und Gebetsdienste mit dem prophetischen Wort und Offenbarungen.
+                      Jugend-, Teenager- und Kindergottesdienste sowie Gesangsgruppen und Gebetsgottesdienste mit dem prophetischen Wort und Offenbarungen.
                     </p>
                     <div className="flex justify-center mt-4">
                       <Link to="/">
