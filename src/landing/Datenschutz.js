@@ -84,7 +84,7 @@ export default function Datenschutz() {
                 <p className="">Freie Evangeliums Christen Gemeinde Lahr e.V.</p>
                 <p className="">Hans-Inderfurth-Str. 11</p>
                 <p className="">77933 Lahr</p>
-                <p className="mb-5">info@fech-lahr.de</p>
+                <p className="mb-5">info@fecg-lahr.de</p>
                 <p className="mb-5">Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über
                     die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.)
                     entscheidet.</p>
