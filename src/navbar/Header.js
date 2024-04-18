@@ -56,14 +56,14 @@ export default function Header() {
         </div>
       )}
       <div className="flex 2xl:p-0 xl:p-0 lg:p-0 p-2">
-        <div className="hover:shadow-md duration-200 hover:rounded-md">
+        <div className="">
           <Link to="/" className="flex items-center">
             <img
               className="2xl:h-12 xl:h-12 lg:h-12 h-10 w-auto"
               src={logo}
               alt=""
             />
-            <h1 className="2xl:text-4xl xl:text-4xl lg:text-4xl text-2xl subpixel-antialiased tracking-wider p-2 font-light duration-500 hover:tracking-widest whitespace-nowrap">
+            <h1 className="2xl:text-4xl xl:text-4xl lg:text-4xl text-2xl subpixel-antialiased p-2 font-light whitespace-nowrap">
               FECG LAHR
             </h1>
           </Link>
