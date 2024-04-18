@@ -98,7 +98,7 @@ export default function Presentation() {
                         <Animator animation={batch(MoveIn(-1000, 0), Fade())}>
                           <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
                             <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
-                            <p>Platz für ca. 1600 Personen</p>
+                            <p>Platz für ca. 1200 Personen</p>
                           </div>
                         </Animator>
                       </div>
@@ -242,7 +242,7 @@ export default function Presentation() {
                           <Animator animation={batch(MoveIn(-1000, 0), Fade())}>
                             <div className='bg-white p-10 bg-opacity-80 shadow-md rounded-md flex flex-col space-y-2'>
                               <h1 className="text-4xl font-light">Unser Gemeindesaal</h1>
-                              <p>Platz für ca. 1600 Personen</p>
+                              <p>Platz für ca. 1200 Personen</p>
                             </div>
                           </Animator>
                         </div>
