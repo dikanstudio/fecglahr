@@ -25,7 +25,7 @@ export default function Impressum() {
 
     return (
         <div className="">
-            <div className="bg-gradient-to-r from-slate-100 to-slate-50 p-10">
+            <div className="bg-slate-100 p-10">
             <h1 className="text-2xl mb-10">Impressum</h1>
                 <p className="font-bold">Freie Evangeliums Christen Gemeinde Lahr e.V.</p>
                 <p className="">Hans-Inderfurth-Str. 11</p>

@@ -33,7 +33,7 @@ export default function Ansprechpartner() {
     const FadeUp = batch(Fade(), Move(), Sticky());
 
     return (
-        <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
+        <ScrollContainer className='bg-slate-100'>
             <ScrollPage>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(0, 1000))}>
                     <div className="w-screen">

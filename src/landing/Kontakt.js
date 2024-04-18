@@ -25,7 +25,7 @@ export default function Kontakt() {
 
     return (
         <div className="">
-            <div className="bg-gradient-to-r from-slate-100 to-slate-50 p-10">
+            <div className="bg-slate-100 p-10">
                 <h1 className="text-2xl">Kontakt</h1>
             </div>
         </div>

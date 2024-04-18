@@ -39,7 +39,7 @@ export default function Presentation() {
   return (
     <div className="">
       <div className="hidden 2xl:block xl:block lg:block">
-        <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
+        <ScrollContainer className='bg-slate-100'>
           <div className="relative">
             <img src={SideView} className=""></img>
             <div className="absolute top-3/4 left-1/2">
@@ -188,7 +188,7 @@ export default function Presentation() {
 
       </div>
       <div className="2xl:hidden xl:hidden lg:hidden block">
-        <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
+        <ScrollContainer className='bg-slate-100'>
           <ScrollPage>
             <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
               <div className="w-screen h-screen">

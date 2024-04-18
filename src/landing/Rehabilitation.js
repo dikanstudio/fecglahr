@@ -27,6 +27,8 @@ import BetesdaLogo from "../assets/reha/betesdaLogo.jpg";
 import BuildingView from "../assets/reha/buildingView.jpg";
 import WoodView from "../assets/reha/woodView.jpg";
 import Wood from "../assets/reha/wood.jpg";
+import Flur from "../assets/reha/flur.jpg";
+import Front from "../assets/reha/front.jpg"
 
 export default function Rehabilitation() {
   const first = batch(Sticky(), Fade(), MoveOut(0, -200));
@@ -36,17 +38,66 @@ export default function Rehabilitation() {
   return (
     <div className="">
       <div className="hidden 2xl:block xl:block lg:block">
-        <ScrollContainer className="bg-gradient-to-r from-slate-100 to-slate-50">
+        <ScrollContainer className="bg-slate-100">
+          <ScrollPage className="">
+            <Animator
+              animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
+            >
+              <div className="w-screen">
+                {/*<img src={BetesdaLogo} className=""></img>*/}
+                <div className="pt-10">
+                  <h1 className="text-8xl mb-10 text-center">Rehabilitation</h1>
+                  <h1 className="text-4xl pb-10 text-center border-b-2">
+                    Betesda-Lahr
+                  </h1>
+                  <div className="flex mt-20 mr-10 ml-10 gap-5">
+                    <div className="flex-col w-1/2 p-2">
+                      <p className="text-xl text-right">Kontakt und Anfragen</p>
+                      <p className="text-2xl text-right font-bold">
+                        betesdalahr@fecg-lahr.de
+                      </p>
+                      <p className="text-xl text-right pt-10">
+                        Rehabilitation & gGmbH
+                      </p>
+                      <p className="text-xl text-right">Ernethof 1</p>
+                      <p className="text-xl text-right">77933 Lahr</p>
+                    </div>
+                    <div className="flex-col w-1/2 border-l-2 p-2">
+                      <p className="text-xl text-left pb-4">
+                        Willkommen auf unserer Rehabilitationsseite.
+                      </p>
+                      <p className="text-lg text-left">
+                        {" "}
+                        Wenn du in einer schwierigen geistlichen, physischen
+                        oder emotionalen Lage bist, oder mit Problemen im
+                        Zusammenhang mit Drogen- oder Alkoholkonsum kämpfst,
+                        bist du nicht allein. Wir sind hier, um dir zu helfen.
+                        Du kannst uns unter der Email kontaktieren, um
+                        Unterstützung oder Informationen zu erhalten. Egal, ob
+                        du Fragen hast oder einfach nur jemanden zum Zuhören
+                        brauchst, wir sind für dich da. Unsere Tür steht immer
+                        offen. Du verdienst Unterstützung und Verständnis auf
+                        deinem Weg zur Genesung. Zögere nicht, uns zu
+                        kontaktieren. Wir sind hier, um dich zu unterstützen und
+                        zu ermutigen.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Animator>
+          </ScrollPage>
+          <img src={Front}></img>
           <ScrollPage>
             <Animator
               animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
             >
               <div className="w-screen">
-                <div class="flex justify-center pt-16">
-                  <div className="m-5 w-1/3 h-full">
-                    <div className="bg-white rounded-md shadow-md flex flex-col justify-evenly">
+                <div class="flex justify-center items-strech pt-40 pb-40">
+                  <div className="m-5 flex-col w-1/3">
+                    <div className="bg-white rounded-md shadow-md flex flex-col h-full">
                       <div className="pb-5">
-                        <img src={BetesdaLogo} className="rounded-md"></img>
+                        <img src={BetesdaLogo} className="rounded-md border-4"></img>
                       </div>
                       <div className="flex justify-center">
                         <svg
@@ -64,24 +115,35 @@ export default function Rehabilitation() {
                           />
                         </svg>
                       </div>
-                      <p className="text-justify pt-2 p-5">
+                      <p className="text-justify text-sm pt-2 p-5">
                         Die christliche Rehabilitation{" "}
-                        <p className="font-bold inline">"Betesda"</p> ist ein
-                        ganzheitlicher Ansatz zur Wiedereingliederung von
-                        straffällig gewordenen Personen in die Gesellschaft. Es
-                        geht dabei nicht nur um die Unterstützung bei der
-                        Bewältigung von Suchtproblemen oder der Vermittlung von
-                        Arbeit, sondern auch um die Förderung des Glaubens und
-                        der Fürsorge für Strafgefangene und ehemalige
-                        Strafgefangene.
+                        <p className="font-bold inline">"Betesda"</p> verfolgt
+                        einen ganzheitlichen Ansatz, um Menschen, die vor
+                        Herausforderungen stehen oder in Konflikt mit dem Gesetz
+                        geraten sind, zu unterstützen und präventiv nach §35 zu
+                        arbeiten. Unser Ziel ist es, nicht nur bei der
+                        Bewältigung von Suchtproblemen zu helfen oder bei der
+                        Vermittlung von Arbeit zu unterstützen, sondern auch den
+                        Glauben zu stärken und fürsorgliche Begleitung
+                        anzubieten. Bei Betesda geht es darum, jedem Einzelnen
+                        eine zweite Chance zu geben und sie auf ihrem Weg zur
+                        Rehabilitation zu begleiten. Unsere Programme umfassen
+                        neben geistlicher und psychischer Unterstützung auch die
+                        Möglichkeit, Jesus und sein Leben näher kennenzulernen
+                        durch Bibelanalysen und Reflexionen. Wir glauben fest
+                        daran, dass ein sinnvolles und erfülltes Leben im
+                        Glauben, geprägt von Liebe und ohne Kriminalität,
+                        möglich ist. Unsere liebevolle Gemeinschaft bietet dabei
+                        Unterstützung und Begleitung auf diesem Weg der
+                        persönlichen Entwicklung und des inneren Wachstums.
                       </p>
                       <div className="flex justify-center mt-3"></div>
                     </div>
                   </div>
-                  <div className="m-5 w-1/3 h-full">
-                    <div className="bg-white rounded-md shadow-md flex flex-col justify-evenly">
+                  <div className="m-5 flex-col w-1/3">
+                    <div className="bg-white rounded-md shadow-md flex flex-col h-full">
                       <div className="pb-5">
-                        <img src={BuildingView} className="rounded-md"></img>
+                        <img src={BuildingView} className="rounded-md border-4"></img>
                       </div>
                       <div className="flex justify-center">
                         <svg
@@ -102,18 +164,25 @@ export default function Rehabilitation() {
                       <p className="text-justify pt-2 p-5">
                         Eine zentrale Rolle spielt dabei die Bereitstellung von
                         Unterkunft und Verpflegung in Form von
-                        Wohngemeinschaften. Hier können die Bewohner von
+                        Wohngemeinschaften, die darauf ausgerichtet sind, den
+                        Bewohnern eine unterstützende und glaubensbasierte
+                        Umgebung zu bieten. Hier können die Bewohner von
                         regelmäßiger Seelsorge und Arbeitstherapie profitieren,
-                        um ihre psychischen und emotionalen Probleme zu
-                        bewältigen und eine positive Einstellung zu entwickeln.
+                        um nicht nur ihre psychischen und emotionalen Probleme
+                        zu bewältigen, sondern auch eine tiefere geistliche
+                        Verbindung zu entwickeln. Wir glauben fest daran, dass
+                        die Integration von Glauben und Therapie dazu beiträgt,
+                        dass die Menschen eine positive Einstellung entwickeln
+                        und ihre Herausforderungen mit Hoffnung und Zuversicht
+                        angehen können.
                       </p>
                       <div className="flex justify-center mt-3"></div>
                     </div>
                   </div>
-                  <div className="m-5 w-1/3 h-full">
-                    <div className="bg-white rounded-md shadow-md flex flex-col justify-evenly">
+                  <div className="m-5 flex-col w-1/3">
+                    <div className="bg-white rounded-md shadow-md flex flex-col h-full">
                       <div className="pb-5">
-                        <img src={Wood} className="rounded-md"></img>
+                        <img src={Wood} className="rounded-md border-4"></img>
                       </div>
                       <div className="flex justify-center">
                         <svg
@@ -132,13 +201,22 @@ export default function Rehabilitation() {
                         </svg>
                       </div>
                       <p className="text-justify pt-2 p-5">
-                        Die Unterstützung bei der Eingliederung in die
-                        Arbeitswelt ist ein weiterer wichtiger Aspekt. Hierbei
-                        werden gezielte Maßnahmen ergriffen, um den ehemaligen
-                        Strafgefangenen eine berufliche Perspektive zu bieten.
-                        Freizeitangebote und kulturelle Aktivitäten tragen dazu
-                        bei, das Selbstbewusstsein zu stärken und ein positives
-                        soziales Umfeld zu schaffen.
+                        Ein weiterer bedeutender Aspekt unserer Arbeit liegt in
+                        der Unterstützung bei der Eingliederung in die
+                        Arbeitswelt. Wir setzen gezielte Maßnahmen ein, um den
+                        ehemaligen Strafgefangenen eine berufliche Perspektive
+                        zu bieten, die auf ihrem persönlichen Wachstum und ihrem
+                        Glauben aufbaut. Durch die Förderung von
+                        Freizeitangeboten und kulturellen Aktivitäten streben
+                        wir danach, das Selbstbewusstsein zu stärken und ein
+                        positives soziales Umfeld zu schaffen, das von
+                        christlichen Werten geprägt ist. Denn wir glauben fest
+                        daran, dass eine sinnvolle berufliche Tätigkeit nicht
+                        nur die finanzielle Stabilität fördert, sondern auch
+                        dazu beiträgt, dass die Menschen ihre Talente entfalten
+                        und einen wertvollen Beitrag zur Gesellschaft leisten
+                        können, während sie gleichzeitig ein erfülltes Leben im
+                        Glauben führen.
                       </p>
                       <div className="flex justify-center mt-3"></div>
                     </div>
@@ -147,19 +225,66 @@ export default function Rehabilitation() {
               </div>
             </Animator>
           </ScrollPage>
-        </ScrollContainer>
-      </div>
-
-      <div className="2xl:hidden xl:hidden lg:hidden block">
-        <ScrollContainer className="bg-gradient-to-r from-slate-100 to-slate-50">
           <ScrollPage>
             <Animator
               animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
             >
               <div className="w-screen">
                 {/*<img src={BetesdaLogo} className=""></img>*/}
-                <h1 className="text-8xl mb-10 text-center">Rehabilitation</h1>
+                <div className="pt-10">
+                  <h1 className="text-8xl mb-10 text-center">gGmbH</h1>
+                  <h1 className="text-4xl pb-10 text-center">
+                    Infos folgen...
+                  </h1>
+                </div>
+              </div>
+            </Animator>
+          </ScrollPage>
+        </ScrollContainer>
+      </div>
+
+      <div className="2xl:hidden xl:hidden lg:hidden block">
+        <ScrollContainer className="bg-slate-100">
+          <ScrollPage>
+            <Animator
+              animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
+            >
+              <div className="w-screen pb-10">
+                {/*<img src={BetesdaLogo} className=""></img>*/}
+                <h1 className="text-6xl mb-10 text-center">Rehabilitation</h1>
                 <h1 className="text-4xl mb-10 text-center">Betesda-Lahr</h1>
+                <div className="flex mt-10 mr-5 ml-5 gap-5">
+                  <div className="flex-col w-1/3 p-2">
+                    <p className="text-base text-right">Kontakt und Anfragen</p>
+                    <p className="text-xs text-right font-bold">
+                      betesdalahr@fecg-lahr.de
+                    </p>
+                    <p className="text-base text-right pt-10">
+                      Rehabilitation & gGmbH
+                    </p>
+                    <p className="text-base text-right">Ernethof 1</p>
+                    <p className="text-base text-right">77933 Lahr</p>
+                  </div>
+                  <div className="flex-col w-2/3 border-l-2 p-2">
+                    <p className="text-lg text-left pb-4">
+                      Willkommen auf unserer Rehabilitationsseite.
+                    </p>
+                    <p className="text-xs text-left">
+                      {" "}
+                      Wenn du in einer schwierigen geistlichen, physischen oder
+                      emotionalen Lage bist, oder mit Problemen im Zusammenhang
+                      mit Drogen- oder Alkoholkonsum kämpfst, bist du nicht
+                      allein. Wir sind hier, um dir zu helfen. Du kannst uns
+                      unter der Email kontaktieren, um Unterstützung oder
+                      Informationen zu erhalten. Egal, ob du Fragen hast oder
+                      einfach nur jemanden zum Zuhören brauchst, wir sind für
+                      dich da. Unsere Tür steht immer offen. Du verdienst
+                      Unterstützung und Verständnis auf deinem Weg zur Genesung.
+                      Zögere nicht, uns zu kontaktieren. Wir sind hier, um dich
+                      zu unterstützen und zu ermutigen.
+                    </p>
+                  </div>
+                </div>
               </div>
             </Animator>
           </ScrollPage>
@@ -168,7 +293,7 @@ export default function Rehabilitation() {
               animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
             >
               <div className="w-screen">
-                <div className="m-5">
+                <div className="m-5 pt-8">
                   <div className="bg-white rounded-md shadow-md flex flex-col justify-evenly">
                     <div className="pb-5">
                       <img src={BetesdaLogo} className="rounded-md"></img>
@@ -191,13 +316,24 @@ export default function Rehabilitation() {
                     </div>
                     <p className="text-justify pt-2 p-5">
                       Die christliche Rehabilitation{" "}
-                      <p className="font-bold inline">"Betesda"</p> ist ein
-                      ganzheitlicher Ansatz zur Wiedereingliederung von
-                      straffällig gewordenen Personen in die Gesellschaft. Es
-                      geht dabei nicht nur um die Unterstützung bei der
-                      Bewältigung von Suchtproblemen oder der Vermittlung von
-                      Arbeit, sondern auch um die Förderung des Glaubens und der
-                      Fürsorge für Strafgefangene und ehemalige Strafgefangene.
+                      <p className="font-bold inline">"Betesda"</p> verfolgt
+                      einen ganzheitlichen Ansatz, um Menschen, die vor
+                      Herausforderungen stehen oder in Konflikt mit dem Gesetz
+                      geraten sind, zu unterstützen und präventiv nach §35 zu
+                      arbeiten. Unser Ziel ist es, nicht nur bei der Bewältigung
+                      von Suchtproblemen zu helfen oder bei der Vermittlung von
+                      Arbeit zu unterstützen, sondern auch den Glauben zu
+                      stärken und fürsorgliche Begleitung anzubieten. Bei
+                      Betesda geht es darum, jedem Einzelnen eine zweite Chance
+                      zu geben und sie auf ihrem Weg zur Rehabilitation zu
+                      begleiten. Unsere Programme umfassen neben geistlicher und
+                      psychischer Unterstützung auch die Möglichkeit, Jesus und
+                      sein Leben näher kennenzulernen durch Bibelanalysen und
+                      Reflexionen. Wir glauben fest daran, dass ein sinnvolles
+                      und erfülltes Leben im Glauben, geprägt von Liebe und ohne
+                      Kriminalität, möglich ist. Unsere liebevolle Gemeinschaft
+                      bietet dabei Unterstützung und Begleitung auf diesem Weg
+                      der persönlichen Entwicklung und des inneren Wachstums.
                     </p>
                     <div className="flex justify-center mt-3"></div>
                   </div>
@@ -210,7 +346,7 @@ export default function Rehabilitation() {
               animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
             >
               <div className="w-screen">
-                <div className="m-5">
+                <div className="m-5 pt-8">
                   <div className="bg-white rounded-md shadow-md flex flex-col justify-evenly">
                     <div className="pb-5">
                       <img src={BuildingView} className="rounded-md"></img>
@@ -233,11 +369,17 @@ export default function Rehabilitation() {
                     </div>
                     <p className="text-justify pt-2 p-5">
                       Eine zentrale Rolle spielt dabei die Bereitstellung von
-                      Unterkunft und Verpflegung in Form von Wohngemeinschaften.
+                      Unterkunft und Verpflegung in Form von Wohngemeinschaften,
+                      die darauf ausgerichtet sind, den Bewohnern eine
+                      unterstützende und glaubensbasierte Umgebung zu bieten.
                       Hier können die Bewohner von regelmäßiger Seelsorge und
-                      Arbeitstherapie profitieren, um ihre psychischen und
-                      emotionalen Probleme zu bewältigen und eine positive
-                      Einstellung zu entwickeln.
+                      Arbeitstherapie profitieren, um nicht nur ihre psychischen
+                      und emotionalen Probleme zu bewältigen, sondern auch eine
+                      tiefere geistliche Verbindung zu entwickeln. Wir glauben
+                      fest daran, dass die Integration von Glauben und Therapie
+                      dazu beiträgt, dass die Menschen eine positive Einstellung
+                      entwickeln und ihre Herausforderungen mit Hoffnung und
+                      Zuversicht angehen können.
                     </p>
                     <div className="flex justify-center mt-3"></div>
                   </div>
@@ -250,7 +392,7 @@ export default function Rehabilitation() {
               animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
             >
               <div className="w-screen">
-                <div className="m-5">
+                <div className="m-5 pt-8">
                   <div className="bg-white rounded-md shadow-md flex flex-col justify-evenly">
                     <div className="pb-5">
                       <img src={Wood} className="rounded-md"></img>
@@ -272,13 +414,21 @@ export default function Rehabilitation() {
                       </svg>
                     </div>
                     <p className="text-justify pt-2 p-5">
-                      Die Unterstützung bei der Eingliederung in die Arbeitswelt
-                      ist ein weiterer wichtiger Aspekt. Hierbei werden gezielte
-                      Maßnahmen ergriffen, um den ehemaligen Strafgefangenen
-                      eine berufliche Perspektive zu bieten. Freizeitangebote
-                      und kulturelle Aktivitäten tragen dazu bei, das
+                      Ein weiterer bedeutender Aspekt unserer Arbeit liegt in
+                      der Unterstützung bei der Eingliederung in die
+                      Arbeitswelt. Wir setzen gezielte Maßnahmen ein, um den
+                      ehemaligen Strafgefangenen eine berufliche Perspektive zu
+                      bieten, die auf ihrem persönlichen Wachstum und ihrem
+                      Glauben aufbaut. Durch die Förderung von Freizeitangeboten
+                      und kulturellen Aktivitäten streben wir danach, das
                       Selbstbewusstsein zu stärken und ein positives soziales
-                      Umfeld zu schaffen.
+                      Umfeld zu schaffen, das von christlichen Werten geprägt
+                      ist. Denn wir glauben fest daran, dass eine sinnvolle
+                      berufliche Tätigkeit nicht nur die finanzielle Stabilität
+                      fördert, sondern auch dazu beiträgt, dass die Menschen
+                      ihre Talente entfalten und einen wertvollen Beitrag zur
+                      Gesellschaft leisten können, während sie gleichzeitig ein
+                      erfülltes Leben im Glauben führen.
                     </p>
                     <div className="flex justify-center mt-3"></div>
                   </div>
@@ -291,7 +441,13 @@ export default function Rehabilitation() {
               animation={batch(MoveIn(0, 1000), Sticky(), MoveOut(0, -1000))}
             >
               <div className="w-screen">
-                <img src={BetesdaLogo} className=""></img>
+                {/*<img src={BetesdaLogo} className=""></img>*/}
+                <div className="pt-10">
+                  <h1 className="text-8xl mb-10 text-center">gGmbH</h1>
+                  <h1 className="text-4xl pb-10 text-center">
+                    Infos folgen...
+                  </h1>
+                </div>
               </div>
             </Animator>
           </ScrollPage>

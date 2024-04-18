@@ -25,7 +25,7 @@ export default function Termine() {
 
     return (
         <div className="">
-            <div className="bg-gradient-to-r from-slate-100 to-slate-50 p-10">
+            <div className="bg-slate-100 p-10">
                 <div className="flex space-x-6 justify-center">
                     <ol className="border-l-2 border-primary border-blue-500">
                         <li>

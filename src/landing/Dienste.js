@@ -31,7 +31,7 @@ export default function Dienste() {
     const FadeUp = batch(Fade(), Move(), Sticky());
 
     return (
-        <ScrollContainer className='bg-gradient-to-r from-slate-100 to-slate-50'>
+        <ScrollContainer className='bg-slate-100'>
             <ScrollPage>
                 <Animator animation={batch(Fade(), Sticky(), MoveOut(-1000, 0))}>
                     <div className="w-screen">
