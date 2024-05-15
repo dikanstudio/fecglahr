@@ -45,7 +45,7 @@ export default function Rehabilitation() {
             >
               <div className="w-screen">
                 {/*<img src={BetesdaLogo} className=""></img>*/}
-                <div className="pt-10">
+                <div className="pt-20">
                   <h1 className="text-8xl mb-10 text-center">Rehabilitation</h1>
                   <h1 className="text-4xl pb-10 text-center border-b-2">
                     Betesda-Lahr
@@ -252,7 +252,7 @@ export default function Rehabilitation() {
       <div className="2xl:hidden xl:hidden lg:hidden block bg-slate-100">
         <div className="w-screen">
           {/*<img src={BetesdaLogo} className=""></img>*/}
-          <h1 className="text-6xl mb-10 text-center pt-14">Rehabilitation</h1>
+          <h1 className="text-6xl mb-10 text-center pt-18">Rehabilitation</h1>
           <h1 className="text-4xl mb-10 text-center">Betesda-Lahr</h1>
           <div className="flex mt-10 mr-5 ml-5 gap-5">
             <div className="flex-col w-1/3 p-2">
