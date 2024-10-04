@@ -190,7 +190,39 @@ export default function Presentation() {
       <div className="2xl:hidden xl:hidden lg:hidden block">
         <ScrollContainer className='bg-slate-100'>
           <ScrollPage>
-            <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
+              <div className="w-screen h-screen">
+                <div className="p-10">
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-2xl">Herzlich Willkommen</h1>
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-2xl">auf der Webseite der</h1>
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-9xl pt-5">FECG</h1>
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-9xl pb-5 border-b-2 border-b-black">Lahr</h1>
+                  <div id="alert-additional-content-5" class="p-4 mt-5 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800" role="alert">
+                    <div class="flex items-center">
+                      <svg class="flex-shrink-0 w-4 h-4 mr-2 me-2 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                      </svg>
+                      <span class="sr-only">Info</span>
+                      <h3 class="text-lg font-medium text-gray-800 dark:text-gray-300">Informationen zu der Rehabilitation</h3>
+                    </div>
+                    <div class="mt-2 mb-4 text-sm text-gray-800 dark:text-gray-300">
+                    Unsere Gemeinde betreibt ein Rehabilitationszentrum mit dem Schwerpunkt auf der Behandlung von Alkohol- und Drogenabhängigkeit. Für weitere Informationen klicken Sie bitte auf den untenstehenden Button.
+                    </div>
+                    <div class="flex">
+                      <Link to="/Rehabilitation">
+                        <button type="button" className="text-white bg-gray-700 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-xs px-3 py-1.5 me-2 text-center inline-flex items-center dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-800">
+                          <svg class="me-2 h-3 w-3 mr-2 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                            <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+                          </svg>
+                          Besuche Betesda
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </ScrollPage>
+          <ScrollPage>
+            <Animator animation={batch(Fade(), Sticky(), Move(0, 200))}>
               <div className="w-screen h-screen">
                 <img src={SideView} className="object-cover"></img>
                 <div className="p-10 first-letter flex flex-col space-y-5 justify-evenly">
@@ -198,7 +230,7 @@ export default function Presentation() {
                   <ul className="list-disc list-inside">
                     <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Sonntag - 10.00 Uhr</li>
                     <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Dienstag - 19:00 Uhr</li>
-                    <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Freitag - 19.00 Uhr</li>
+                    <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Donnerstag - 19.00 Uhr</li>
                   </ul>
                   <ul className="list-none bottom-0">
                     <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Hans-Inderfurthstr. 11</li>
