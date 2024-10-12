@@ -297,25 +297,64 @@ export default function Presentation() {
               </div>
           </ScrollPage>
           <ScrollPage>
-            <Animator animation={batch(Fade(), Sticky(), Move(0, 200))}>
-              <div className="w-screen h-screen">
-                <img src={SideView} className="object-cover"></img>
-                <div className="p-10 first-letter flex flex-col space-y-5 justify-evenly">
-                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans border-b-2 border-b-black">Gottesdienste</h1>
-                  <ul className="list-disc list-inside">
-                    <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Sonntag - 10.00 Uhr</li>
-                    <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Dienstag - 19:00 Uhr</li>
-                    <li className="2xl:text-2xl xl:text-xl lg:text-base text-gray-700">Donnerstag - 19.00 Uhr</li>
-                  </ul>
-                  <ul className="list-none bottom-0">
-                    <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Hans-Inderfurthstr. 11</li>
-                    <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">77933 Lahr</li>
-                  </ul>
-                  <ul className="list-none bottom-0">
-                    <li className="2xl:text-2xl xl:text-xl lg:text-lg text-gray-700">Pastor: Viktor Binefeld</li>
-                  </ul>
+            <Animator animation={batch(Fade(), Sticky(), Fade())}>
+              <div className='p-10 w-screen'>
+                <div className="flex h-screen justify-center items-center">
+                  <div class="flex flex-col space-y-5 w-full relative z-10">
+                  <img src={SideView} className="rounded-lg shadow-lg"></img>
+                    <h1 class="text-3xl sm:text-4xl xs:text-3xl font-normal font-sans text-right pb-3">Gottesdienste</h1>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                          <div class="bg-[#1F2937] w-12 h-10 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-lg font-bold">DI</span>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Gebetsgottesdienst</p>
+                            <p class="text-2xl font-bold text-gray-900">19:00 Uhr</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                          <div class="bg-[#1F2937] w-12 h-10 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-lg font-bold">DO</span>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Bibelstunde</p>
+                            <p class="text-2xl font-bold text-gray-900">19:00 Uhr</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                      <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                          <div class="bg-[#1F2937] w-12 h-10 rounded-lg flex items-center justify-center">
+                            <span class="text-white text-lg font-bold">SO</span>
+                          </div>
+                          <div>
+                            <p class="text-sm text-gray-500">Gottesdienst</p>
+                            <p class="text-2xl font-bold text-gray-900">10:00 Uhr</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border-b-2"></div>
+                    <ul class="list-none bottom-0">
+                      <li class="text-lg text-right text-gray-700">Hans-Inderfurthstr. 11</li>
+                      <li class="text-lg text-right text-gray-700">77933 Lahr</li>
+                    </ul>
+                    <div className="">
+                      <h1 class="text-3xl sm:text-3xl xs:text-3xl font-normal font-sans text-right">Pastor</h1>
+                      <p class="text-2xl sm:text-2xl xs:text-2xl font-extralight font-sans text-right pb-3">Viktor Binefeld</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+            
             </Animator>
           </ScrollPage>
           <ScrollPage>
