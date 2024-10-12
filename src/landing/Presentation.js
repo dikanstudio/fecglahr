@@ -40,18 +40,93 @@ export default function Presentation() {
     <div className="">
       <div className="hidden 2xl:block xl:block lg:block">
         <ScrollContainer className='bg-slate-100'>
-          <div className="relative">
-            <img src={SideView} className=""></img>
-            <div className="absolute top-3/4 left-1/2">
-              <button className="bg-white rounded-full animate-bounce p-3">
-                <div className="">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-                  </svg>
+          <ScrollPage>
+              <div className="h-screen flex items-center justify-center">
+                <div className="p-10">
+                  <div className="flex flex-row items-center space-x-5 pb-5">
+                    <div className="w-5/12">
+                      <h1 className="2xl:text-6xl xl:text-5xl lg:text-4xl font-extralight font-sans">Herzlich Willkommen</h1>
+                      <h1 className="2xl:text-6xl xl:text-5xl lg:text-4xl font-extralight font-sans">auf der Webseite der</h1>
+                      <h1 className="2xl:text-11xl xl:text-10xl lg:text-9xl font-extralight break-words font-sans pt-5 pb-5">FECG Lahr</h1>
+                    </div>
+                    <div className="w-7/12">
+                      { /* <img src={SideView} className="rounded-md shadow-xl"></img> */ }
+                      <div class="w-full pl-10">
+                        <h1 class="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-right pb-3">Gottesdienste</h1>
+                        <div class="flex space-x-5">
+                          <div class="bg-white p-4 rounded-lg shadow-md flex-1">
+                            <div class="flex items-center justify-between">
+                              <div class="flex items-center space-x-3">
+                                <div class="bg-[#1F2937] w-12 h-10 rounded-lg flex items-center justify-center">
+                                  <span class="text-white text-lg font-bold">DI</span>
+                                </div>
+                                <div>
+                                  <p class="text-sm text-gray-500">Gebetsgottesdienst</p>
+                                  <p class="text-2xl font-bold text-gray-900">19:00 Uhr</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bg-white p-4 rounded-lg shadow-md flex-1">
+                            <div class="flex items-center justify-between">
+                              <div class="flex items-center space-x-3">
+                                <div class="bg-[#1F2937] w-12 h-10 rounded-lg flex items-center justify-center">
+                                  <span class="text-white text-lg font-bold">DO</span>
+                                </div>
+                                <div>
+                                  <p class="text-sm text-gray-500">Bibelstunde</p>
+                                  <p class="text-2xl font-bold text-gray-900">19:00 Uhr</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="bg-white p-4 rounded-lg shadow-md flex-1">
+                            <div class="flex items-center justify-between">
+                              <div class="flex items-center space-x-3">
+                                <div class="bg-[#1F2937] w-12 h-10 rounded-lg flex items-center justify-center">
+                                  <span class="text-white text-lg font-bold">SO</span>
+                                </div>
+                                <div>
+                                  <p class="text-sm text-gray-500">Gottesdienst</p>
+                                  <p class="text-2xl font-bold text-gray-900">10:00 Uhr</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div className="border-b-2 border-b-black"></div>
+                  <div id="alert-additional-content-5" class="p-4 mt-5 relative z-10 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800" role="alert">
+                    <div class="flex items-center">
+                      <svg class="flex-shrink-0 w-4 h-4 mr-2 me-2 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                      </svg>
+                      <span class="sr-only">Info</span>
+                      <h3 class="text-2xl font-medium text-gray-800 dark:text-gray-300">Informationen zu der Rehabilitation</h3>
+                    </div>
+                    <div class="mt-2 mb-4 text-gray-800 dark:text-gray-300 2xl:text-md xl:text-md lg:text-md">
+                    Unsere Gemeinde betreibt ein Rehabilitationszentrum mit dem Schwerpunkt auf der Behandlung von Alkohol- und Drogenabhängigkeit. Für weitere Informationen klicken Sie bitte auf den untenstehenden Button.
+                    </div>
+                    <div class="flex">
+                      <Link to="/Rehabilitation">
+                        <button type="button" className="2xl:text-lg xl:text-lg lg:text-md text-white bg-gray-700 hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg px-3 py-1.5 me-2 text-center inline-flex items-center dark:bg-gray-600 dark:hover:bg-gray-500 dark:focus:ring-gray-800">
+                          <svg class="me-2 h-3 w-3 mr-2 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                            <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+                          </svg>
+                          Besuche Betesda
+                        </button>
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </button>
-            </div>
-          </div>
+              </div>
+          </ScrollPage>
+          <ScrollPage>
+            <img src={SideView} className="rounded-md shadow-xl"></img>
+          </ScrollPage>
           <ScrollPage>
             <img className="" src={EntryChurch}></img>
             <Animator animation={batch(Fade(), Sticky(), Move(0, -200))}>
@@ -190,13 +265,13 @@ export default function Presentation() {
       <div className="2xl:hidden xl:hidden lg:hidden block">
         <ScrollContainer className='bg-slate-100'>
           <ScrollPage>
-              <div className="w-screen h-screen">
+              <div className="w-screen h-screen flex items-center">
                 <div className="p-10">
-                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-2xl">Herzlich Willkommen</h1>
-                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-2xl">auf der Webseite der</h1>
-                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-9xl pt-5">FECG</h1>
-                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans text-9xl pb-5 border-b-2 border-b-black">Lahr</h1>
-                  <div id="alert-additional-content-5" class="p-4 mt-5 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800" role="alert">
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans md:text-2xl text-xl">Herzlich Willkommen</h1>
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans md:text-2xl text-xl">auf der Webseite der</h1>
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans md:text-9xl text-8xl pt-5">FECG</h1>
+                  <h1 className="2xl:text-4xl xl:text-3xl lg:text-3xl font-extralight font-sans md:text-9xl text-8xl pb-5 border-b-2 border-b-black">Lahr</h1>
+                  <div id="alert-additional-content-5" class="p-4 mt-5 relative z-10 border border-gray-300 rounded-lg bg-gray-50 dark:border-gray-600 dark:bg-gray-800" role="alert">
                     <div class="flex items-center">
                       <svg class="flex-shrink-0 w-4 h-4 mr-2 me-2 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
